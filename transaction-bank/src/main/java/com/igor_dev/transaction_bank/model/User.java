@@ -23,19 +23,26 @@ public class User {
     @Column(name = "password", nullable = false, unique = true)
     private String password;
 
+    private Long balance;
+
     public User() {
     }
 
-    public User(Long id, String username, String email, String cpf, String password) {
+    public User(Long id, String username, String email, String cpf, String password, Long balance) {
         this.id = id;
         this.username = username;
         this.email = email;
-//        this.cpf = cpf;
+        this.cpf = cpf;
         this.password = password;
+        this.balance = balance;
     }
 
     public Long getId() {
         return id;
+    }
+
+    public Long getBalance() {
+        return balance;
     }
 
     public String getCpf() {
