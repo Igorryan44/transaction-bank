@@ -59,4 +59,4 @@ mvnw
 mvnw.cmd
 .mvn/
 application.properties
-/test
+test/
